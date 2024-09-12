@@ -1,0 +1,9 @@
+@media (max-width: 360px){
+  .bar{
+        display: block;
+  }
+  #navBar{
+    display: none;
+  }
+}
+  

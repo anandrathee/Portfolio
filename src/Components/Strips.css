@@ -1,0 +1,53 @@
+.strips-container {
+  display: flex;
+  /* flex-direction: column; */
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 8rem;   */
+  background-color: #5840BA;
+  /* padding: 20px; */
+  overflow: hidden;;
+  position: relative;
+}
+
+.strips-container:hover .animate-strip{
+  animation-play-state: paused;
+}
+
+
+
+.strip1 {
+  width: 100vw;
+  height: 100% ;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  /* padding: 1rem; */
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 0 3rem;
+  justify-content: space-between;
+  /* background-color: chocolate; */
+  /* gap: 20px; */
+}
+
+
+
+.animate-strip {
+  animation: move-strip;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move-strip {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
