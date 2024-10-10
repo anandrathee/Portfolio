@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FaFacebookF } from "react-icons/fa";
+// import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+
+// import { FaWhatsapp } from "react-icons/fa";
 import Button from "./Button";
 import { IoIosCloseCircle } from "react-icons/io";
-import { FaPlus } from "react-icons/fa6";
+
 import { FaGithub } from "react-icons/fa";
 
 const Home = () => {
@@ -85,7 +87,7 @@ const Home = () => {
   }, [profile]);
 
   return (
-    <div id="home" className="home-page w-full flex items-center justify-between h-screen overflow-hidden px-32">
+    <div id="home" className="home-page w-full flex items-center justify-evenly h-screen overflow-hidden">
 
       <div className="home-left-content flex items-start justify-between flex-col">
         <div className="top w-52 h-52   rounded-full flex items-center justify-evenly bg-zinc-100 shadow-inner p-2">
@@ -99,17 +101,17 @@ const Home = () => {
         </div>
 
         <div className="testimonial h-22 w-[14rem] flex flex-col items-start p-2 rounded-md transition-all duration-1000">
-          <h2 className="font-semibold text-3xl">{profile[currentImageIndex].name}:</h2>
-          <h3 className="h-12 w-[16rem]  font-bold w-58 text-ellipsis overflow-hidden">
+          <h2 className="font-bold text-2xl">{profile[currentImageIndex].name}:</h2>
+          <h3 className="h-12 w-[16rem]  font-semibold w-58 text-ellipsis overflow-hidden">
             {profile[currentImageIndex].feedBack}
           </h3>
         </div>  
 
-        <div className="bottom flex flex-col items-start gap-1 mb-10">
+        <div className="bottom flex flex-col items-start mb-10">
           <div className="flex items-center justify-center">
           <div>
-          <h2 className="font-bold text-[3rem] ml-2">{profile.length}+</h2>
-          <p className="font-bold text-sm ml-2 mb-2 -mt-2">Happy Clients</p>
+          <h2 className="font-semibold text-[3rem] ml-2">{profile.length}+</h2>
+          <p className="font-semibold text-sm ml-2 mb-2 -mt-2">Happy Clients</p>
           </div>
           <div className="clients-feed w-16 h-16 rounded-full bg-zinc-100 flex items-center justify-center text-[#5840BA] text-2xl ml-4 border-2 border-[#5840BA]">
     <button onClick={() => setFeedForm(true)} className="w-14 h-14 font-semibold text-xl flex items-center justify-center">
@@ -121,43 +123,31 @@ const Home = () => {
           
           </div>
 
-
-          {/* <div className="clients flex w-[17rem]  h-20 -mt-3 items-center justify-center  overflow-x-auto">
-  {profile.map((item, index) => (
-    <div
-      key={item.name + index} // Unique key using name and index
-      className={`clients-feed w-16 h-16 rounded-full shrink-0 bg-zinc-500 flex items-center justify-center border-2 -ml-4 overflow-hidden ${index === currentImageIndex ? 'scale-105' : ''} transition duration-200 `}
-    >
-      <img src={item.imageUrl} alt={item.name} />
-    </div>
-  ))}
-  
-         
-        </div> */}
         <div className=" top-[80%] -mt-8 flex justify-start gap-5 bg-white rounded-full p-1">
-          <Button color={"bg-[#5840BA] rounded-full text-white text-lg px-10 py-3"} text={"Portfolio"} />
+          <Button color={"bg-blue-500 rounded-full text-white text-lg px-10 py-3"} text={"Portfolio"} />
           <Button color={"rounded-full border-2 border-black text-black font-semibold text-lg px-10 py-3 "} text={"Hire Me"} />
         </div>
       </div>
 
       <div className="home-center-content flex flex-col items-center justify-end h-full mt-[40rem] ">
         <p className="home-para font-semibold">- Hello</p>
-        <h1 className="home-text font-semibold text-5xl flex items-center justify-center gap-2">
-          I'm <u className="text-[#5840BA]"><img src="/icons/Name.png" alt="" className=" home-name-img w-40" /></u>
+        <h1 className="home-text font-semibold text-4xl flex items-center justify-center gap-2">
+          I'm <u className="text-[#5840BA]"><img src="/icons/Name.png" alt="" className=" home-name-img w-36" /></u>
         </h1>
-        <h1 className="home-text2 font-semibold text-6xl">Frontend Developer</h1>
+        <h1 className="home-text2 font-semibold text-5xl">Frontend Developer</h1>
         <div className="image h-[50vw] bg-cover flex items-center justify-center">
           <img id="home-img" src="/image/GirlBlue.png" className="h-full mb-10" alt="" />
         </div>        
       </div>
 
       <div className="home-right-content flex flex-col items-center justify-center gap-5">
-        <div className="line bg-[#5840BA] w-1 h-28 rounded-full"></div>
-        <FaFacebookF className="text-2xl" />
+        <div className="line bg-blue-500 w-1 h-28 rounded-full"></div>
+        <RiInstagramFill className="text-2xl" />
+        {/* <FaFacebookF  /> */}
         <FaXTwitter className="text-2xl" />
         <FaLinkedinIn className="text-2xl" />
         <FaGithub className="text-2xl" />
-        <div className="line bg-[#5840BA] w-1 h-28 rounded-full"></div>
+        <div className="line bg-blue-500 w-1 h-28 rounded-full"></div>
       </div>
       {feedForm && (
         <div className={`feedForm bg-black flex overflow-hidden items-center justify-center w-full h-screen inset-0 bg-opacity-30 backdrop-blur-sm top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] absolute transition-transform duration-500 ${formClosing ? "translate-y-full" : ""}`}>

@@ -16,12 +16,12 @@ const Strips = () => {
     <div className="strips-container">
       <div className="strip1 animate-strip">
         {data.map((item, index) => (
-          <img className='strip1-img' key={index} src={item.logo} alt=""/>
+          <img className='strip1-img w-24' key={index} src={item.logo} alt=""/>
         ))}
       </div>
       <div className="strip1 animate-strip">
         {data.map((item, index) => (
-          <img className='strip1-img' key={index} src={item.logo} alt=""/>
+          <img className='strip1-img w-24' key={index} src={item.logo} alt=""/>
         ))}
       </div>
     </div>
