@@ -24,7 +24,7 @@ const Services = () => {
       </div>
       <div className="services-bottom w-full flex items-center justify-evenly">
         {data.map((item,index)=>(
-          <div key={index} className="services-bottom-left w-[20rem] h-[23rem] bg-blue-500 text-white rounded-[46%] flex items-center justify-center gap-5 flex-col">
+          <div key={index} className="services-bottom-left w-[20vw] h-[23vw] p-2 bg-blue-500 text-white rounded-md flex items-center justify-center gap-5 flex-col">
           <div className="service-img w-28 h-28 rounded-full overflow-hidden p-8 relative bg-white">
             <img src={item.image} alt="" className='w-full h-full  object-cover' />
           </div>

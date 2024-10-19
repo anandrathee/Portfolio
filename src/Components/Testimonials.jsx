@@ -3,38 +3,38 @@ import React, { useEffect, useState } from 'react';
 const Testimonial = () => {
   const customerData = [
     {
-      image: "/profile/nikhil.jpg", 
+      image: "/image/man1.avif", 
       name: "Nikhil", 
       position: "Admin, HR", 
-      des: "Great experience from start to finish! The installation was quick and efficient, and the engineer took the time to explain how to use the system. I only wish the app was a bit more user-friendly, but overall, very satisfied!", 
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.", 
       rating: "4.8"
     },
     {
-      image: "/profile/mohit.jpg", 
+      image: "/image/man2.avif", 
       name: "Mohit", 
       position: "IT, Manager", 
-      des: "The team at IT-Innovate Enterprises did an amazing job installing our CCTV system. They were professional, punctual, and very knowledgeable. I feel much safer knowing I can monitor my property anytime. Highly recommend", 
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", 
       rating: "4.9"
     },
     {
-      image: "./profile/rajesh.jpg", 
+      image: "/image/man3.avif", 
       name: "Rajesh", 
       position: "Sr, Maintanance Manager", 
-      des: "Absolutely outstanding service! The team at IT-Innovate Enterprises was quick to respond to our IT issues and resolved everything efficiently. Their expertise and support have made a huge difference for our business. Highly recommend!", 
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.", 
       rating: "4.7"
     },
     {
-      image: "./profile/sachin.jpg", 
+      image: "/image/man4.avif", 
       name: "Sachin", 
       position: "Director at sky worrior", 
-      des: "Great experience overall! The IT support staff were professional and very knowledgeable. They helped us migrate our systems smoothly. Only minor hiccup was some communication delays, but the results were worth it!", 
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.", 
       rating: "4.6"
     },
     {
-      image: "./profile/himanshu.jpg", 
+      image: "/image/man5.avif", 
       name: "Himanshu Gupta", 
       position: "Owner of Coal Depot", 
-      des: "We switched to IT-Innovate Enterprises for our IT needs, and it was the best decision we made. Their team is proactive and always looking for ways to improve our systems. Highly recommend them for any business!", 
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.", 
       rating: "4.9"
     },
   ];

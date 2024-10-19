@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
 // import { FaWhatsapp } from "react-icons/fa";
-import Button from "./Button";
+
 import { IoIosCloseCircle } from "react-icons/io";
 
 import { FaGithub } from "react-icons/fa";
@@ -87,7 +87,7 @@ const Home = () => {
   }, [profile]);
 
   return (
-    <div id="home" className="home-page w-full flex items-center justify-evenly h-screen overflow-hidden">
+    <div id="home" className="home-page w-full px-24 flex items-center justify-evenly h-screen overflow-hidden">
 
       <div className="home-left-content flex items-start justify-between flex-col">
         <div className="top w-52 h-52   rounded-full flex items-center justify-evenly bg-zinc-100 shadow-inner p-2">
@@ -123,20 +123,20 @@ const Home = () => {
           
           </div>
 
-        <div className=" top-[80%] -mt-8 flex justify-start gap-5 bg-white rounded-full p-1">
-          <Button color={"bg-blue-500 rounded-full text-white text-lg px-10 py-3"} text={"Portfolio"} />
-          <Button color={"rounded-full border-2 border-black text-black font-semibold text-lg px-10 py-3 "} text={"Hire Me"} />
+        <div className=" top-[80%] -mt-8 flex justify-start gap-5 bg-white rounded-full">
+          <a href="https://github.com/anandrathee?tab=repositories" target="_blank" class=" border-2 border-black font-semibold rounded-full text-sm px-5 py-3">Github</a>
+          <a href="" class="rounded-full border-2 border-black text-black font-semibold text-sm px-5 py-3"> Hire Me</a>
         </div>
       </div>
 
-      <div className="home-center-content flex flex-col items-center justify-end h-full mt-[40rem] ">
+      <div className="home-center-content flex flex-col items-center justify-end h-full mt-[38rem] ">
         <p className="home-para font-semibold">- Hello</p>
         <h1 className="home-text font-semibold text-4xl flex items-center justify-center gap-2">
           I'm <u className="text-[#5840BA]"><img src="/icons/Name.png" alt="" className=" home-name-img w-36" /></u>
         </h1>
         <h1 className="home-text2 font-semibold text-5xl">Frontend Developer</h1>
         <div className="image h-[50vw] bg-cover flex items-center justify-center">
-          <img id="home-img" src="/image/GirlBlue.png" className="h-full mb-10" alt="" />
+          <img id="home-img" src="/image/Boymain.png" className="h-full mb-20" alt="" />
         </div>        
       </div>
 

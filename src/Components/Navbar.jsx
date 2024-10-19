@@ -10,7 +10,7 @@ const Navbar = () => {
   }
 
   return (
-    <div id='navBar' className='navBar w-full h-14 flex items-center justify-between px-32 fixed'>
+    <div id='navBar' className='navBar w-full h-14 flex items-center justify-between px-32 fixed z-50'>
       <div className="logo font-bold text-3xl text-[#5840BA]">ProCoder</div>
       
       <nav className='nav flex items-center justify-center gap-10 text-sm uppercase font-semibold'>
@@ -32,7 +32,7 @@ const Navbar = () => {
 
       <div>
         <div onClick={handleBar} className='bar cursor-pointer hidden'><FaBars /></div>
-        <a href="#contactPage" className='ctnPage text-black text-sm font-semibold uppercase underline'>Contact</a>
+        <a href="#contact" className='ctnPage text-black text-sm font-semibold uppercase underline'>Contact</a>
       </div>
     </div>
   )
